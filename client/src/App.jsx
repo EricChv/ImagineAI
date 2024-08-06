@@ -8,20 +8,21 @@ export const App = () => {
   return (
     <BrowserRouter>
       <header className="w-full flex justify-between items-center 
-      bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
+      bg-white sm:px-8 px-4 py-3 border-b border-b-[#e6ebf4]">
         <Link to="/">
           <img src={logo} alt="logo" className="w-28 object-contain" />
         </Link>
 
-        <Link to="/create-post" className="font-inter font-normal text-blacks px-7 py-1">Create</Link>
+        <Link to="/create-post" className="font-inter font-light text-black px-7 py-1">Create</Link>
       </header>
       <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
-        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create-post" element={<CreatePost />} /> 
+        </Routes>
       </main>
     </BrowserRouter>
   )
 }
 
 export default App
-
-//19:09
