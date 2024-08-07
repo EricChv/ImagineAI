@@ -13,7 +13,8 @@ export const App = () => {
           <img src={logo} alt="logo" className="w-28 object-contain" />
         </Link>
 
-        <Link to="/create-post" className="font-inter font-light text-black px-7 py-1">Create</Link>
+        <Link to="/create-post" className="font-inter font-light text-white bg-[#222328] px-4 py-2
+        rounded-[5px]">Create</Link>
       </header>
       <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
         <Routes>

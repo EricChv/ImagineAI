@@ -8,7 +8,7 @@ const RenderCards = ({data, title }) => { // 'data' & 'title' are params
   }
 
   return (
-    <h2 className='mt-5 font-bold text-[#6449ff] text-xl uppercase'>{title}</h2>
+    <h2 className='mt-5 font-bold text-[#666e75] text-xl uppercase'>{title}</h2>
   )
 }
 
@@ -24,8 +24,7 @@ const Home = () => {
         <h1 className='font-semibold text-[#222328] text-[32px]'>
           Community Gallery</h1>
           <p className='mt-2 text-[#666e75] text-[16px] max-w[500px]'>
-            Explore a stunning showcase of imaginative AI-generated art, crafted by a vibrant community of creators.
-          </p>
+          Welcome to our Community Gallery, where the creative potential of AI brings art to life. Explore and be inspired by a world of imaginative and visually stunning art.          </p>
       </div>
 
       <div className='mt-16'>
