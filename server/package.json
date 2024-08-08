@@ -15,8 +15,12 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongodb": "4.1",
     "mongoose": "^8.5.2",
     "nodemon": "^3.1.4",
     "openai": "^4.55.1"
+  },
+  "devDependencies": {
+    "vite-plugin-terminal": "^1.2.0"
   }
 }

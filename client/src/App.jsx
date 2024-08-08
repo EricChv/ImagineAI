@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 import { logo } from './assets';
-import { Home, CreatePost } from './pages';
+import { Home, CreatePost } from './page';
 
 export const App = () => {
   return (
@@ -26,4 +26,4 @@ export const App = () => {
   )
 }
 
-export default App
+export default App;
