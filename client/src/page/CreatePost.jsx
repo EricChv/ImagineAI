@@ -7,6 +7,7 @@ import { FormField, Loader } from '../components';
 
 const CreatePost = () => {
   const navigate = useNavigate();
+  
   const [form, setForm] = useState({
     name: '',
     prompt: '',
@@ -14,22 +15,23 @@ const CreatePost = () => {
   });
 
   const [generatingImg, setGeneratingImg] = useState(false);
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const generateImage = async () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://localhost:8080/api/v1/dalle', {
+        const response = await fetch('http://localhost:8080/api/v1/dalle/', {
           method: 'POST',
-          header: {
+          headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ prompt: form.prompt }),
         });
 
         const data = await response.json();
-        setForm({ ...form, photo: 'data:image/jpeg;base64,${data.photo}'});
+
+        setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` });
       } catch (error) {
           alert(error);
       } finally {
@@ -45,12 +47,12 @@ const CreatePost = () => {
   };
   
   const handleChange = (e) => {
-    setForm({...form, [e.target.name]: e.target.value});
+    setForm({ ...form, [e.target.name]: e.target.value });
   }
 
   const handleSurpriseMe = () => {
     const randomPrompt = getRandomPrompt(form.prompt);
-    setForm({...form, prompt: randomPrompt})
+    setForm({ ...form, prompt: randomPrompt })
   };
 
   return (
