@@ -2,13 +2,12 @@ import * as dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 
-dotenv.config();
-
 
 import connectDB from './mongodb/connect.js';
 import postRoutes from './routes/postRoutes.js';
 import dalleRoutes from './routes/dalleRoutes.js';
 
+dotenv.config();
 
 const app = express();
 app.use(cors());
