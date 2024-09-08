@@ -77,3 +77,7 @@ The DALL-E 2 is the core of the image generation feature, transforming text prom
 2. Click on "Create" on the navbar, then enter a text prompt and click the "Generate" button.
 3. The application will use DALL-E to create a unique image based on your prompt.
 4. Save and share your generated image to the community board.
+
+## Demo
+
+https://github.com/user-attachments/assets/a39c8e6c-c0e9-4b83-abd0-ab05c0a50efa
