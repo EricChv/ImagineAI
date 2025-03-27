@@ -1,23 +1,23 @@
 # ImagineAI
 
-ImagineAI is a full-stack web app for generating, saving, and sharing AI-created images using OpenAI's DALL-E.
+Full-stack web app for generating, saving, and sharing AI-created images using OpenAI's DALL-E.
 
 ## Features
-- **AI Image Generation**: Uses OpenAI's DALL-E model to transform text prompts into unique images.
-- **User-Friendly UI**: React.js provides a dynamic, component-based interface for seamless interaction.
-- **Responsive Design**: Tailwind CSS ensures a flexible, mobile-friendly layout with utility-first styling.
-- **Light/Dark Mode**: Users can switch themes effortlessly for a comfortable viewing experience.
+- **AI Image Generation**: Uses OpenAI's DALL-E model to transform text prompts into ai genereated images.
+- **User-Friendly UI**: React.js provides a dynamic, component-based interface for easy interaction.
+- **Responsive Design**: Tailwind CSS provides a flexible, mobile-friendly layout with utility-first styling.
+- **Light/Dark Mode**: Users can switch themes easily for a comfortable viewing experience.
 - **Backend Integration**: Node.js & Express.js manage server-side logic, API endpoints, and data processing.
-- **Data Storage**: MongoDB efficiently stores and retrieves user-generated images and posts.
+- **Data Storage**: MongoDB stores and retrieves user-generated images and posts.
 - **Fast Development**: Vite speeds up frontend development with instant HMR, optimized dependency pre-bundling, and ES module-based performance enhancements.
 
 ## Technologies Used
 - **Node.js & Express.js**: Provide a fast, scalable backend with API routing and request handling.
-- **MongoDB**: NoSQL database enabling efficient and scalable storage for user-generated content.
-- **React.js**: Powers a modular and interactive front-end experience.
+- **MongoDB**: NoSQL database enables efficient and scalable storage for user-generated content.
+- **React.js**: Is responsible for a modular and interactive front-end experience.
 - **Tailwind CSS**: Utility-first CSS framework for fast and consistent UI styling.
-- **Vite**: Accelerates frontend builds with lightning-fast hot reloads and optimized asset handling.
-- **DALL-E**: AI model that generates unique images from text-based prompts.
+- **Vite**: Accelerates frontend builds with fast reloads and optimized asset handling.
+- **DALL-E**: AI model generates images from text-based prompts.
 
 ## Installation
 1. Clone the repo:
